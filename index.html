@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- style files -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/my-framework.css" />
+    <link rel="stylesheet" href="css/master.css" />
+
+    <!-- google font (open-sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <title>Front End Template</title>
+  </head>
+  <body>
+    <!-- scroll to top button  -->
+    <button class="scrolling" title="To Top">
+      <i class="fa-solid fa-angles-up"></i>
+    </button>
+    <!-- scroll to top button  -->
+
+    <!-- customize the page  -->
+    <div class="customize">
+      <div><i class="fa-solid fa-gear"></i></div>
+      <!--fa-spin-->
+      <div class="colors">
+        select page's colors
+        <span class="orange active" data-color="#f57c00"></span>
+        <span class="blue" data-color="#039be5"></span>
+        <span class="green" data-color="#388e3c"></span>
+        <span class="brown" data-color="#6d4c41"></span>
+      </div>
+      <div class="backgrounds">
+        <span>alternate backgrounds?</span>
+        <button>yes</button>
+        <button>No</button>
+      </div>
+      <div class="nav-bullets">
+        <span>Show navigation bullets?</span>
+        <button>yes</button>
+        <button>No</button>
+      </div>
+      <span class="reset">reset</span>
+    </div>
+    <!-- the navigation bullets  -->
+    <div class="nav-spans">
+      <span data-section="about"></span>
+      <span data-section="skills"></span>
+      <span data-section="gallary"></span>
+      <span data-section="works"></span>
+      <span data-section="testimonials"></span>
+      <span data-section="contact"></span>
+    </div>
+    <!-- End customize the page  -->
+    <!-- the landing page -->
+    <div class="landing .p-relative">
+      <div class="container">
+        <div class="header">
+          <div class="logo">A.Almuhamady</div>
+          <ul class="m-0 p-0">
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#gallary">Gallary</a></li>
+            <li><a href="#works">Works</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+            <!-- the active class is on li not a-->
+          </ul>
+          <div class="icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div class="info">
+        <h1>Designing websites</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate
+          dolore obcaecati deserunt pariatur nesciunt perspiciatis!
+        </p>
+      </div>
+    </div>
+    <!-- End landing page -->
+    <!-- About us section-->
+    <div id="about" class="container">
+      <h1 class="title">About us</h1>
+      <div class="about">
+        <div class="info">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            alias eveniet itaque similique culpa! Hic sed natus sint perferendis
+            fugit sapiente ex aperiam accusamus debitis explicabo at illo, ad
+            praesentium.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi
+            provident distinctio, placeat id aspernatur quisquam sed ad vitae
+            officiis ab!
+          </p>
+        </div>
+        <div class="image">
+          <img src="imgs/about-section.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- End About us -->
+    <!-- Skills section  -->
+    <div id="skills" class="skills">
+      <h1 class="title">skills</h1>
+      <div class="container">
+        <div class="skill">
+          <h4 class="name">HTML</h4>
+          <div class="skill-progress">
+            <span data-progress="90%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h4 class="name">CSS</h4>
+          <div class="skill-progress">
+            <span data-progress="85%"></span>
+          </div>
+        </div>
+        <div class="skill">
+          <h4 class="name">JavaScript</h4>
+          <div class="skill-progress">
+            <span data-progress="75%"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Skills section  -->
+    <!-- start Gallary section with its popups -->
+    <div id="gallary" class="gallary">
+      <h1 class="title">Gallary</h1>
+      <div class="container">
+        <div class="images">
+          <!-- select images with ration 2x1 -->
+          <img src="imgs/gallary-1.jpg" alt="image - one" />
+          <img src="imgs/gallary-2.jpeg" alt="image - two" />
+          <img src="imgs/gallary-3.jpg" alt="image - three" />
+          <img src="imgs/gallary-4.jpg" alt="image - four" />
+          <img src="imgs/gallary-5.jpg" />
+          <img src="imgs/gallary-6.png" alt="" />
+          <img src="imgs/gallary-7.jpg" alt="" />
+        </div>
+      </div>
+    </div>
+
+    <!-- End Gallary section with its popups -->
+
+    <!-- Start the Projects with Timeline -->
+    <div id="works" class="timeline-works">
+      <h1 class="title">my Works</h1>
+      <div class="container">
+        <!-- works of 2022 -->
+        <div class="works">
+          <div class="year">2022</div>
+          <div class="work left">
+            <h3>leon-template</h3>
+            <p>a responsive web design ,created from a free UI design.</p>
+            <div class="langs">
+              <span>html</span>
+              <span>css</span>
+            </div>
+            <a href="https://amgad000.github.io/leon-template/" target="_blank"
+              >explore</a
+            >
+          </div>
+          <div class="clear-float"></div>
+          <div class="work right">
+            <h3>kasper-template</h3>
+            <p>a responsive web design ,created from a free UI design.</p>
+            <div class="langs">
+              <span>html</span>
+              <span>css</span>
+            </div>
+            <a
+              href="https://amgad000.github.io/kasper-template/"
+              target="_blank"
+              >explore</a
+            >
+          </div>
+          <div class="clear-float"></div>
+          <div class="work left">
+            <h3>Amgad-template</h3>
+            <p>
+              a responsive web design ,created with some ideas of my mentor
+              "Osama Elzero" and me.
+            </p>
+            <div class="langs">
+              <span>html</span>
+              <span>css</span>
+            </div>
+            <a
+              href="https://amgad000.github.io/Amgad-template3/"
+              target="_blank"
+              >explore</a
+            >
+          </div>
+          <div class="clear-float"></div>
+        </div>
+        <!-- works of 2023 -->
+      </div>
+    </div>
+    <!-- End the Projects with Timeline -->
+
+    <!-- Testimonials section -->
+    <h1 class="title">Testimonials</h1>
+    <div id="testimonials" class="testimonials">
+      <div class="container">
+        <div class="card">
+          <div class="info">
+            <img src="imgs/ts-1.jpg" alt="" />
+            <h3>Jhon Doe</h3>
+            <span class="date">Sep 22,2022</span>
+          </div>
+          <div class="post">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laborum
+            fuga, accusamus delectus quas ad eum.
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <img src="imgs/ts-2.jpg" alt="" />
+            <h3>Jhon Doe</h3>
+            <span class="date">Oct 2,2022</span>
+          </div>
+          <div class="post">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla
+            maiores omnis hic velit beatae vitae quia officia earum natus modi!
+          </div>
+        </div>
+        <div class="card">
+          <div class="info">
+            <img src="imgs/ts-3.jpg" alt="" />
+            <h3>Jhon Doe</h3>
+            <span class="date">Oct 27,2022</span>
+          </div>
+          <div class="post">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+            distinctio odio voluptatem blanditiis!
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Testimonials section -->
+    <!-- contact us section  -->
+    <div id="contact" class="contact">
+      <h1 class="title">contact us</h1>
+      <div class="container">
+        <div class="inputs">
+          <input type="text" name="username" placeholder="Your Name" />
+          <input type="text" name="birth" placeholder="Your Birthday" />
+          <input type="email" name="email" placeholder="Your mail" />
+          <input type="text" name="phone" placeholder="Your Phone Number" />
+        </div>
+        <div class="send">
+          <textarea name="msg" placeholder="Enter Your message"></textarea>
+          <input type="submit" value="send" />
+        </div>
+      </div>
+    </div>
+    <!-- End contact us section  -->
+    <!-- the footer  -->
+    <div class="footer">
+      Created with <i class="fa-solid fa-heart"></i> By A.Almuhamady
+      <div class="year">&copy; <span>2022</span></div>
+    </div>
+    <!-- End the footer  -->
+    <script src="js/master.js" type="module"></script>
+  </body>
+</html>

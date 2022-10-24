@@ -1,0 +1,50 @@
+
+/* identifing container in different screens */
+.container {
+    margin: auto;
+}
+@media (min-width:768px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (min-width:992px) {
+    .container {
+        max-width: 940px;
+    }
+}
+@media (min-width:1200px) {
+    .container {
+        max-width: 1170px;
+    }
+}
+
+/* paddings and margins */
+.m-0 {
+    margin: 0;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-15 {
+    margin-top: 15px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.mb-15 {
+    margin-bottom: 15px;
+}
+.p-0 {
+    padding: 0;
+}
+/* End paddings and margins */
+/* positions and Display */
+.p-relative {
+    position: relative;
+}
+.p-absolute {
+    position: absolute;
+}
+/* End positions and Display */
+
