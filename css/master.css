@@ -220,7 +220,7 @@ button.scrolling i {
     min-height: 100vh;
     background-size: cover;
     overflow: hidden;
-    transition: 1s;
+    transition: .3s;
     animation: clip-landing 4s infinite linear alternate-reverse;
 }
 @keyframes clip-landing {

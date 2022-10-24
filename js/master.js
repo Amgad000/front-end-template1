@@ -68,19 +68,19 @@ let imgurls = [
   "imgs/background-4.jpg",
 ];
 let changer;
-let duration = 5000;
+let duration = 7000;
 
 if (localStorage.getItem("background")) {
   landingPage.style.backgroundImage = localStorage.getItem("background");
 } else {
   landingPage.style.backgroundImage = `url(imgs/background-3.jpg)`;
 }
+
 if (localStorage.getItem("back-button") == "yes") {
   yesBtn.classList.add("on");
   if (noBtn.classList.contains("on")) {
     noBtn.classList.remove("on");
   }
-
   clearInterval(changer);
   changer = setInterval(() => {
     let random = Math.floor(Math.random() * imgurls.length);
