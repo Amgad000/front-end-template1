@@ -218,7 +218,6 @@ button.scrolling i {
 /* the landing page  */
 .landing {
     min-height: 100vh;
-    background-image: url("../imgs/background-3.jpg");
     background-size: cover;
     overflow: hidden;
     transition: 1s;

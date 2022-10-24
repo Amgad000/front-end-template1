@@ -62,16 +62,18 @@ let yesBtn = document.querySelector(".backgrounds button:nth-of-type(1)");
 let noBtn = document.querySelector(".backgrounds button:nth-of-type(2)");
 
 let imgurls = [
-  "../imgs/background-1.jpg",
-  "../imgs/background-2.jpg",
-  "../imgs/background-3.jpg",
-  "../imgs/background-4.jpg",
+  "imgs/background-1.jpg",
+  "imgs/background-2.jpg",
+  "imgs/background-3.jpg",
+  "imgs/background-4.jpg",
 ];
 let changer;
 let duration = 5000;
 
 if (localStorage.getItem("background")) {
   landingPage.style.backgroundImage = localStorage.getItem("background");
+} else {
+  landingPage.style.backgroundImage = `url(imgs/background-3.jpg)`;
 }
 if (localStorage.getItem("back-button") == "yes") {
   yesBtn.classList.add("on");
